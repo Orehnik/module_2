@@ -15,6 +15,60 @@
 
 </head>
 <body>
+
+  <header class="header"> 
+    <div class="container">
+        <div class="header-inner">
+            <div class="logo-wrapper">
+                <img class="logo" src="resources/metrika.svg" alt="Метрика">
+            </div>
+            <ul class="header__nav">
+                <li>
+                    <a href="#info" class="header__nav-link" >О НАС</a>
+                </li>
+                <li>
+                    <a href="#projects" class="header__nav-link" >ПРОЕКТЫ</a>
+                </li>
+                <li>
+                    <a href="#services" class="header__nav-link" >УСЛУГИ</a>
+                </li>
+                <li>
+                    <a href="#contacts" class="header__nav-link" >КОНТАКТЫ</a>
+                </li>
+            </ul>
+            <div class="js-burger-btn burger-btn">
+                <div class="burger-icon"></div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="js-burger burger">
+      <div class="js-burger__content burger__content">
+          <div class="burger-logo-wrapper">
+              <img class="burger-logo" src="resources/metrika.svg" alt="Метрика">
+          </div>
+          <ul class="burger-header__nav">
+              <li>
+                  <a href="#info" class="burger-header__nav-link" >О НАС</a>
+              </li>
+              <li>
+                  <a href="#projects" class="burger-header__nav-link" >ПРОЕКТЫ</a>
+              </li>
+              <li>
+                  <a href="#services" class="burger-header__nav-link" >УСЛУГИ</a>
+              </li>
+              <li>
+                  <a href="#contacts" class="burger-header__nav-link" >КОНТАКТЫ</a>
+              </li>
+          </ul>
+          <div class="burger__contacts">
+              <p class="burger__contacts-title">для связи:</p>
+              <a class="burger__contacts-phone" href="tel:+79358954535">+7 935 895-45-35</a>
+              <a class="burger__contacts-mail" href="hello@mail.com">hello@mail.com</a>
+          </div>
+      </div>
+  </div>
+  </header>
   
   <!-- <div class="header-container align"> 
     <img class="header-img"src="resources/metrika.svg" alt="metrika">
@@ -53,19 +107,19 @@
       <h2>ПРОЕКТЫ</h2>
         <img class="project-img"src="resources/Rectangle_6.png" alt="red sofa">
         <p class="project_p">ЖК ПРАВОБЕРЕЖНЫЙ — 112 м² — 2023</p>
-        <a class="a_project" href="/">Подробнее →</a> 
+        <a class="a_project" href="">Подробнее →</a> 
     </div>
  
     <div class="project">
       <img class="project-img"src="resources/Rectangle_7.png" alt="bright room">
       <p class="project_p">ЖК НОРВЕЖСКИЙ ПАРК — 75 М² — 2023</p>
-      <a class="a_project" href="/">Подробнее →</a> 
+      <a class="a_project" href="">Подробнее →</a> 
     </div>
   
     <div class="project">
       <img class="project-img"src="resources/Rectangle_8.png" alt="bright room">
       <p class="project_p">ЖК СОСНОВСКИЕ ОЗЕРА — 94 М² — 2022</p>
-      <a class="a_project" href="/">Подробнее →</a> 
+      <a class="a_project" href="">Подробнее →</a> 
     </div>
 
 
@@ -102,7 +156,38 @@
           <p class="services_price">5% от стоимости</p>
         </div>
       </div> 
-      <a class="services_btn" href="">Заказать услугу</a> 
+
+      <button class="services_btn js-btn">Заказать услугу</button>
+      <div class="popup js-popup">
+        <div class="popup__content js-popup__content">
+          <h3 class="order__title">Заказать услугу</h3>
+          <p class="order__text">
+            Заполните форму, мы свяжемся с вами в течение суток
+          </p>
+          <form class="order__form" autocomplete="on">
+            <input
+              class="input order__input"
+              type="text"
+              name="name"
+              placeholder="Имя"
+            />
+            <input
+              class="input order__input"
+              type="email"
+              name="email"
+              placeholder="Электронная почта"
+            />
+            <input
+              class="input order__input"
+              type="tel"
+              name="phone"
+              placeholder="Номер телфона"
+            />
+          </form>
+          <button class="popup__send-btn">Отправить</button>
+          <div class="popup__close-btn js-popup__close-btn"></div>
+        </div>
+      </div> 
   </div>  
 </section> 
 
@@ -282,5 +367,7 @@
   
 <!-- </div> -->
 <script src="styles/gallery.js"></script>
+<script src="styles/popup.js"></script>
+<script src="styles/burger.js"></script>
 </body>
 </html>

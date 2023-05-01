@@ -6,15 +6,9 @@ body {
   font-family: 'Manrope',Courier, monospace;
 }
 
-/* .align {
-  margin: 0 auto;
-  width: 1150px;
+.body_fixed {
+  overflow: hidden;
 }
-
-.align_1 {
-  margin: 0 auto;
-  width: 1400px;
-} */
 
 h1  {
   /* margin-top: 70px; */

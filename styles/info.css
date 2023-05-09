@@ -1,0 +1,47 @@
+.about-us {
+    size: 45px;
+   
+  }
+  
+  .about-us_p {
+    margin-bottom: 30px;
+    font-size: 45px;
+    font-weight: 400;
+    line-height: 61px;
+    letter-spacing: -0.03em;
+    text-align: left;
+    width: 1048px;
+    }
+  
+  .about-us-link {
+     display: inline-block;
+     width: 255px;
+     background-color: #ad1818;
+     border-radius: 5px;
+     font-size: 20px;
+     text-align: center;
+     line-height: 67px;
+     text-decoration: none;
+     color: white;
+     letter-spacing: -0.5px;
+  }
+
+  @media (max-width: 1199px) {
+    .about-us_p {
+    width: 690px;
+    font-size: 35px;
+    line-height: 48px;
+  }
+  }
+  @media (max-width: 767px) {
+    .about-us_p {
+        width: 100%;
+        font-size: 22px;
+        line-height: 30px;
+      }
+      .about-us-link {
+        width: 100%;
+        line-height: 51px;
+        font-size: 16px;
+      }
+  }
